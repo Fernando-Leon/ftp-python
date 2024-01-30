@@ -25,12 +25,12 @@ def enviar_archivo(ruta_archivo):
     try:
         # Configuracion de FTP
         ftp = FTP() # Creamos un objeto de tipo FTP
-        ftp.connect('server_url') # Nos conectamos a la direccion de nuestro servidor
-        ftp.login('user', 'password') # Accedemos con nuestras credenciales
+        ftp.connect('www.ferserverftp.somee.com') # Nos conectamos a la direccion de nuestro servidor
+        ftp.login('ferleon', '!69r7hVA') # Accedemos con nuestras credenciales
         ftp.set_pasv(True) # Activar el modo pasivo
 
         # Cambiar al directorio correcto en el servidor con cwd
-        directorio_servidor = '/directorio'
+        directorio_servidor = '/www.ferserverftp.somee.com'
         ftp.cwd(directorio_servidor)
 
         # Obtener el nombre del archivo
@@ -110,8 +110,8 @@ ventana.geometry(f"{width}x{height}+{x_coordinate}+{y_coordinate}")
 
 # Iniciar la conexión FTP y actualizar la lista de archivos
 ftp = FTP()
-ftp.connect('server_url')
-ftp.login('user', 'password') 
+ftp.connect('www.ferserverftp.somee.com')
+ftp.login('ferleon', '!69r7hVA') 
 ftp.set_pasv(True) 
 ftp.cwd('/directorio')  
 actualizar_lista_archivos()
